@@ -1,0 +1,6 @@
+data/
+ml_scraper.py
+clothing_scraper.py
+*.db
+*.sqlite
+*.sqlite3

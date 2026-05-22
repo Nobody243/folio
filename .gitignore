@@ -1,0 +1,118 @@
+# =============================================================================
+# .gitignore — Big Data Clothing Aggregator (Python + Node + Docker)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Secrets / credentials — NEVER commit any of these
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*credentials*
+serviceAccount*.json
+service-account*.json
+firebase-adminsdk*.json
+gcp-key*.json
+.secrets/
+secrets/
+
+# -----------------------------------------------------------------------------
+# Local data / generated DBs — scraped content, ML state, large binary files
+# -----------------------------------------------------------------------------
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-shm
+*.db-wal
+
+# -----------------------------------------------------------------------------
+# Python — bytecode, venvs, build artifacts, test caches
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+build/
+dist/
+*.egg-info/
+*.egg
+
+# -----------------------------------------------------------------------------
+# Node / Vite / React — deps and build output
+# -----------------------------------------------------------------------------
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -----------------------------------------------------------------------------
+# Logs / streaming output
+# -----------------------------------------------------------------------------
+logs/
+*.log
+stream_out.txt
+
+# -----------------------------------------------------------------------------
+# Spark / Kafka local state (checkpoints, offsets, derby metastore)
+# -----------------------------------------------------------------------------
+spark-warehouse/
+metastore_db/
+derby.log
+checkpoint/
+checkpoints/
+*.crc
+
+# -----------------------------------------------------------------------------
+# Editor / IDE / agent config — keep personal preferences out of the repo
+# -----------------------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.claude/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# -----------------------------------------------------------------------------
+# OS junk
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# -----------------------------------------------------------------------------
+# Firebase CLI local emulator / cache
+# -----------------------------------------------------------------------------
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
