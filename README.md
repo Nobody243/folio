@@ -250,3 +250,7 @@ bd term project/
 - **Firebase config in `.env`.** The Firebase Web SDK key is technically public
   (security is enforced by `firestore.rules`), but it's kept in `.env` so the
   public repo isn't hardwired to one specific Firebase project.
+
+
+
+Hosted url : https://staging.d3lmw6s3chjejw.amplifyapp.com/
